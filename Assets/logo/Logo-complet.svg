@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 255 255">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f7f6f2;
+      }
+
+      .st0, .st1, .st2, .st3, .st4 {
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st2, .st3, .st4 {
+        stroke: #1d1d1b;
+      }
+
+      .st5 {
+        fill: #333;
+      }
+
+      .st5, .st6, .st7 {
+        isolation: isolate;
+      }
+
+      .st5, .st7 {
+        font-family: CooperBlack, 'Cooper Black';
+        font-size: 24px;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .st2 {
+        display: none;
+        fill: #fff;
+      }
+
+      .st3, .st7 {
+        fill: #b8ddd1;
+      }
+
+      .st4 {
+        fill: #f7b186;
+      }
+    </style>
+  </defs>
+  <rect class="st2" x="-7.9" y="-678.2" width="300.8" height="300.8"/>
+  <path class="st2" d="M-53.5-478.4"/>
+  <path class="st2" d="M-22.5-478.4"/>
+  <path class="st3" d="M42.9,161.3c14.2-10.4,81.9-12.7,93.9,4.6,50.8,73.6-152.3,49.5-93.9-4.6h0Z"/>
+  <path class="st4" d="M128.3,122.5c-16-18-55-22.1-75.2-8.4-18.9,12.6-6.2,37.2,13.4,35.3,15-1.5,27.2,2.6,49.7-.5,14.1-2,23.2-14.4,12.2-26.2h-.1c0-.1,0-.1,0-.1Z"/>
+  <path class="st0" d="M108.6,87c8.6,15.9-5.1,17.4-24.1,15-24.3-3-30.9-15-23.4-23.6,10.5-12,25.9-19.9,47.4,8.5h0Z"/>
+  <g class="st6">
+    <g class="st6">
+      <text class="st5" transform="translate(139.8 149.7)"><tspan x="0" y="0">Nutri</tspan></text>
+    </g>
+  </g>
+  <g class="st6">
+    <g class="st6">
+      <text class="st7" transform="translate(160.5 171.4)"><tspan x="0" y="0">Form</tspan></text>
+    </g>
+  </g>
+  <path class="st1" d="M-144.9-614.2"/>
+</svg>

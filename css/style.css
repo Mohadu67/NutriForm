@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/Assets/font/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/Assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Reset global */
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Suppression des styles par défaut */
+
+img, picture, video, canvas, svg {
+    max-width: 100%;
+}
+
+/* Styles globaux */
+body {
+    background-color: #F7F6F2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, nav, a {
+    font-family: 'Merriweather', serif;
+}
+
+/* Header */
+header div {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header div img {
+    height: 200px;
+}
+
+header div a img {
+    height: 30px;
+}
+
+header div nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header div nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 80px;
+    transition: all 0.3s ease;
+    margin: 15px;
+}
+
+header div nav a:hover {
+    background-color: hwb(0 20% 80%);
+    color: #fff;
+    border-color: #000;
+}
+
+#orange {
+    background-color: #F7F6F2;
+    color: #000000;
+    border-color: #F7B186;
+}
+
+#orange:hover {
+    background-color: #F7B186;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 50px;
+    margin: 25px 0px 0px 50px;
+    display: flex;
+}
+
+/* MAIN */
+
+main section {
+
+    margin: 150px 0px 0px 60px;
+
+}
+
+
+
+/* Footer */
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer div nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 80px;
+    transition: all 0.3s ease;
+    margin: 15px;
+}
+
+footer img {
+    height: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    margin:400px ;
+}
+
+footer ul {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    
+}

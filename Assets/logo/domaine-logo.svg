@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 170 50">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f7b186;
+      }
+
+      .st0, .st1 {
+        font-family: CooperBlack, 'Cooper Black';
+        font-size: 24px;
+      }
+
+      .st0, .st1, .st2 {
+        isolation: isolate;
+      }
+
+      .st1 {
+        fill: #333;
+      }
+
+      .st3 {
+        display: none;
+        fill: #fff;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="st3" x="-45.4" y="-175.7" width="300.8" height="300.8"/>
+  <path class="st3" d="M-91,24.1"/>
+  <path class="st3" d="M-60,24.1"/>
+  <g class="st2">
+    <text class="st1" transform="translate(15.9 33.7)"><tspan x="0" y="0">Nutri</tspan></text>
+  </g>
+  <g class="st2">
+    <text class="st0" transform="translate(90.2 33.5)"><tspan x="0" y="0">Form</tspan></text>
+  </g>
+</svg>
