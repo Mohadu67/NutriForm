@@ -106,12 +106,58 @@ main section {
 
 
 
+main section ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+main section ul li {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 80px;
+    list-style: none;
+
+}
+
+main section ul li img {
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #B5EAD7;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+main section ul li p {
+    padding: 30px 0px 30px 0px;
+}
+
+a.button {
+    text-decoration: none;
+    color: #333;
+    border: 3px solid #333;
+    border-radius: 25px;
+    background-color:#F7B186;
+    padding: 10px;
+    margin: 20px;
+}
+
+
 /* Footer */
+
+footer {
+    /* display: flex;
+    justify-content: center; */
+    
+}
 footer div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
 }
 
 footer div nav a {
@@ -126,8 +172,9 @@ footer div nav a {
     margin: 15px;
 }
 
-footer img {
-    height: 200px;
+
+footer div .logo {
+    height: 150px;
 }
 
 footer a {
@@ -135,7 +182,7 @@ footer a {
     color: #333;
     font-weight: bold;
     font-size: 12px;
-    margin:550px ;
+    margin:px ;
 }
 
 footer ul {
@@ -143,6 +190,30 @@ footer ul {
     color: #333;
     font-weight: bold;
     font-size: 2px;
-
-    
 }
+
+footer div nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer nav a:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+footer .reseau {
+    height: 200px;
+}
+
