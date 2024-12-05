@@ -44,18 +44,14 @@ header div {
     align-items: center;
 }
 
-
 header div img {
     height: 200px;
-}
-
-header div a img {
-    height: 30px;
 }
 
 header div nav {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 header div nav a {
@@ -66,19 +62,18 @@ header div nav a {
     border: 2px solid #333;
     border-radius: 5px;
     padding: 10px 80px;
-    transition: all 0.3s ease;
-    margin: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header div nav a:hover {
-    background-color: hwb(0 20% 80%);
+    background-color: #000;
     color: #fff;
     border-color: #000;
 }
 
 #orange {
     background-color: #F7F6F2;
-    color: #000000;
+    color: #000;
     border-color: #F7B186;
 }
 
@@ -86,15 +81,17 @@ header div nav a:hover {
     background-color: #F7B186;
 }
 
-header a {
-    text-decoration: none;
+#Iconehead {
+    display: flex; 
+    align-items: center; 
+    gap: 25px; 
+    text-decoration: none; 
     color: #333;
     font-weight: bold;
     font-size: 20px;
     padding: 10px 50px;
-    margin: 25px 0px 0px 50px;
-    display: flex;
 }
+
 
 /* MAIN */
 
@@ -130,6 +127,7 @@ main section ul li img {
     border: 2px solid #B5EAD7;
     border-radius: 100%;
     padding: 15px;
+    height: 150px;
 }
 
 main section ul li p {
@@ -150,13 +148,13 @@ a.button {
 /* Footer */
 
 footer {
-    /* display: flex;
-    justify-content: center; */
-    
+    border-top: 2px solid #333;
+    margin-top: 500px;
+    padding: 60px 0px 0px 0px ;
 }
+
 footer div {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -169,27 +167,17 @@ footer div nav a {
     border-radius: 5px;
     padding: 10px 80px;
     transition: all 0.3s ease;
-    margin: 15px;
 }
-
 
 footer div .logo {
     height: 150px;
+    margin-right: auto;
 }
 
-footer a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 12px;
-    margin:px ;
-}
-
-footer ul {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 2px;
+footer div .reseau {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
 }
 
 footer div nav {
@@ -205,15 +193,24 @@ footer nav a {
     border: 2px solid #333;
     border-radius: 5px;
     padding: 10px 25px;
+    margin: 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 footer nav a:hover {
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
 }
 
-footer .reseau {
-    height: 200px;
+a.Mention {
+    text-align: center;
+    display: block;
 }
+
+.reseau img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
 

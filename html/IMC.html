@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Assets/logo/Logo.svg"/>
+
     <link rel="stylesheet" href="/css/style.css">
     <title>NutriForm-IMC</title>
+
 </head>
 
 <body>   
@@ -25,13 +28,66 @@
             </nav>
         </div>
                 
-            <a href="IMC.html" id="iconecalculette"><img src="/Assets/icon/calculette.svg" alt="iconecalculette">IMC</a>
-            
+        <a id="Iconehead" href="IMC.html">
+            <img src="/Assets/icon/calculette.svg" alt="iconehome"> Indice De Masse Corporelle </a>
+
         </header>
         
     <main>
+
         <section>
+            <H1>L'indice de Masse Corporelle</H1>
+            <form id="imc-form">
+                <!-- Choix du sexe -->
+                <fieldset>
+                    <legend>Sexe</legend>
+                    <label>
+                        <input type="radio" name="sexe" value="homme" required />
+                        Homme
+                    </label>
+                    <label>
+                        <input type="radio" name="sexe" value="femme" />
+                        Femme
+                    </label>
+                </fieldset>
             
+                <label for="taille">Taille (cm) :</label>
+                <input type="number" id="taille" name="taille" placeholder="Ex : 170" min="50" max="300" required />
+        
+                <label for="poids">Poids (kg) :</label>
+                <input type="number" id="poids" name="poids" placeholder="Ex : 70" min="1" max="500" required />
+            
+                <button type="submit">Calculer Mon IMC</button>
+
+            </form>
+            
+            <ul>
+                <li>
+                    <h2>Que Signifie Votre IMC</h2>
+                    <p>
+                    L'indice de Masse Corporelle <br>
+                    IMC est utilisé pour déterminer si vous êtes en santé <br>
+                    en fonction de votre taille et de votre poids. <br>
+                    Selon l'OMS, un IMC de 28.4 indique la catégoriqe : 
+                    Surpoids : IMC 25 et 30. <br>
+                    En savoir plus 
+                    </p>
+                    <p>
+                    Cela signifie que votre poids est supérieur à <br>
+                     la moyenne idéale pour votre taille. Cependant, ce <br>
+                      n'est pas encore considéré comme de l'obésité. <br>
+                      L'IMC ne prend pas en compte la composition... <br>
+                      En savoir plus
+                    </p>
+                </li>
+                <li>
+                    <h2>Conseil & interpretation</h2>
+                    <p></p>
+                    <p></p>
+                </li>
+            </ul>
+
+
           
         </section>
 
@@ -51,24 +107,35 @@
 
 
     <footer>
-        
-        <div>
-            <img src="/Assets/logo/Logo-complet.svg" alt="logo du site">
+       
+        <div> 
+            
+            <img src="/Assets/logo/Logo.svg" alt="logo du site" class="logo">
+
             <nav>
-                    <a href="index.html">Accueil</a>
-                    <a href="contact.html">Contact</a>
-                    <a id="orange" href="IMC.html">IMC</a>
-                    <a id="orange" href="calorie.html">Calorie</a>
-    
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">Contact</a>
             </nav>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Twiter</li>
-            </ul>
+            <nav>
+                <a id="orange" href="IMC.html">IMC</a>
+                <a id="orange" href="calorie.html">Calorie</a>
+            </nav>
+            
+            <div class="reseau">
+                
+                    <a href=""></a ><img src="/Assets/icon/facebook.svg" alt="iconefacebook" class = 'icone'>
+                    <a href=""></a><img src="/Assets/icon/instagram.svg " alt="iconeInsta">
+                    <a href=""></a><img src="/Assets/icon/linkedin.svg" alt="icone">
+                    <a href=""></a><img src="/Assets/icon/twitter-x.svg" alt="iconeX">
+                    
+            </div>
+
         </div>
-                <a href="Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés-Hamiani.Mohammed@hotmail.com</a>
-        </footer>
+
+        <a class="Mention" Mention.html>MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés-Hamiani.Mohammed@hotmail.com</a>
+
+    </footer>
+
 
 </body>
 
