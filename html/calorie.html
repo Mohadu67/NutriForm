@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/Assets/logo/Logo.svg"/>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
     <title>NutriForm-Calorie</title>
 </head>
 
@@ -17,7 +17,7 @@
             <nav>
                 
                 <a href="index.html">Accueil</a>
-                <a id="orange" href="IMC.html">IMC</a>
+                <a class="orange" href="IMC.html">IMC</a>
                 <a href="contact.html">Contact</a>
                 
 
@@ -26,11 +26,80 @@
                 
         <a id="Iconehead" href="calorie.html">
             <img src="/Assets/icon/calculette.svg" alt="iconehome"> Calcule De Calorie </a>            
-        </header>
+    </header>
 
     <main>
         <section>
          
+            <section class="form">
+
+                <a href="index.html">L'indice de Masse Corporelle </a><img src="/Assets/icon/bonhomme yoga.svg" alt="">
+               <form id="imc-form">
+                   <!-- Choix du sexe -->
+                   <fieldset>
+                       <legend>Sexe</legend>
+                       <label>
+                           <button type="radio" name="sexe" value="homme" required />
+                           Homme
+                       </label>
+                       <label>
+                           <button type="radio" name="sexe" value="femme" required />
+                           Femme
+                       </label>
+                   </fieldset>
+               
+                   <label for="taille">Taille (cm) :</label>
+                   <input type="number" id="taille" name="taille" placeholder="Ex : 183" min="50" max="300" required />
+                   
+                   <label for="poids">Poids (kg) :</label>
+                   <input type="number" id="poids" name="poids" placeholder="Ex : 95" min="1" max="500" required />
+
+                   <label for="age">Age (ans) :</label>
+                   <input type="number" id="age" name="age" placeholder="Ex : 95" min="1" max="100" required />
+
+                   
+                   <button type="submit">Calculer Mon IMC</button>
+                   
+               </form>
+               
+               <ul>
+                   <li>
+                       <h2>Que Signifie Votre IMC</h2>
+                       <p>
+                           L'indice de Masse Corporelle <br>
+                           IMC est utilisé pour déterminer si vous êtes en santé <br>
+                           en fonction de votre taille et de votre poids. <br>
+                           Selon l'OMS, un IMC de 28.4 indique la catégoriqe : 
+                           Surpoids : IMC 25 et 30. <br>
+                           En savoir plus 
+                       </p>
+                       <p>
+                           Cela signifie que votre poids est supérieur à <br>
+                           la moyenne idéale pour votre taille. Cependant, ce <br>
+                           n'est pas encore considéré comme de l'obésité. <br>
+                           L'IMC ne prend pas en compte la composition... <br>
+                           En savoir plus
+                       </p>
+                   </li>
+                   <li>
+                       <h2>Conseil & interpretation</h2>
+                       <p>
+                           Réévaluez votre alimentation : Adoptez une <br>
+                           alimentation équilibrée, riche en fruits, légumes, <br>
+                           et protéines maigres, tout en limitant les aliments riches <br>
+                           en graisses et en sucres. <br>
+                           Augmenter l'activité physique : Intégrer une activité physique régulière comme la marche rapi... <br>
+                           En savoir plus
+                       </p>
+                       <p>
+                           Pourquoi c'est important <br>
+                           Le surpoids peut augmenter le risque de développer <br>
+                           des maladies chroniques comme les maladies <br>
+                            cardiaques, le diabète et l'hypertension. Il est cons...
+                       </p>
+                   </li>
+               </ul>
+
         </section>
 
         <section>
@@ -48,33 +117,31 @@
 
 
     <footer>
-       
-        <div> 
-            
+        <div>
             <img src="/Assets/logo/Logo.svg" alt="logo du site" class="logo">
-
-            <nav>
+    
+            <!-- Première nav : Accueil et Contact -->
+            <nav class="nav-principale">
                 <a href="index.html">Accueil</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <nav>
-                <a id="orange" href="IMC.html">IMC</a>
-                <a id="orange" href="calorie.html">Calorie</a>
+    
+            <!-- Deuxième nav : IMC et Calorie -->
+            <nav class="nav-secondaire">
+                <a class="orange" href="IMC.html">IMC</a>
+                <a class="orange" href="calorie.html">Calorie</a>
             </nav>
-            
+    
+            <!-- Réseaux sociaux -->
             <div class="reseau">
-                
-                    <a href=""></a ><img src="/Assets/icon/facebook.svg" alt="iconefacebook" class = 'icone'>
-                    <a href=""></a><img src="/Assets/icon/instagram.svg " alt="iconeInsta">
-                    <a href=""></a><img src="/Assets/icon/linkedin.svg" alt="icone">
-                    <a href=""></a><img src="/Assets/icon/twitter-x.svg" alt="iconeX">
-                    
+                <a href="#"><img src="/Assets/icon/facebook.svg" alt="icone facebook" class="icone"></a>
+                <a href="#"><img src="/Assets/icon/instagram.svg" alt="icone Instagram" class="icone"></a>
+                <a href="#"><img src="/Assets/icon/linkedin.svg" alt="icone LinkedIn" class="icone"></a>
+                <a href="#"><img src="/Assets/icon/twitter-x.svg" alt="icone Twitter" class="icone"></a>
             </div>
-
         </div>
-
-        <a class="Mention" Mention.html>MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés-Hamiani.Mohammed@hotmail.com</a>
-
+    
+        <a href="Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés - Hamiani.Mohammed@hotmail.com</a>
     </footer>
 
 </body>

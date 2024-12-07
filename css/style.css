@@ -20,6 +20,12 @@ html, body {
     box-sizing: inherit;
 }
 
+img{
+    
+}
+
+
+
 /* Suppression des styles par défaut */
 
 img, picture, video, canvas, svg {
@@ -27,8 +33,15 @@ img, picture, video, canvas, svg {
 }
 
 /* Styles globaux */
+
+:root {
+    --couleur-principale : #F7F6F2;
+    --couleur-bouton-action : #F7B186;
+    --couleur-bouton-selection : #B5EAD7;
+}
+
 body {
-    background-color: #F7F6F2;
+    background-color: var(--couleur-principale);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -71,13 +84,13 @@ header div nav a:hover {
     border-color: #000;
 }
 
-#orange {
+.orange {
     background-color: #F7F6F2;
     color: #000;
     border-color: #F7B186;
 }
 
-#orange:hover {
+.orange:hover {
     background-color: #F7B186;
 }
 
@@ -98,18 +111,20 @@ header div nav a:hover {
 main section {
 
     margin: 150px 0px 0px 60px;
-
-}
-
-
-
-main section ul {
-    display: flex;
-    justify-content: space-evenly;
     text-align: center;
 }
 
-main section ul li {
+
+main section ul {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+
+}
+
+main .introutils ul li {
     color: #333;
     font-weight: bold;
     font-size: 16px;
@@ -144,13 +159,119 @@ a.button {
     margin: 20px;
 }
 
+                                                 /* Main page IMC */
 
-/* Footer */
+/* Formulaire principal */
+form {
+    background-color: #F7F6F2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 70%;
+}
+
+form fieldset {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* Titre du formulaire */
+.form a {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 40px;
+}
+
+
+/* choix genre personne */
+
+.groupe-sexe {
+    display: flex;
+    margin: 30px;
+}
+
+.groupe-sexe :focus {
+
+}
+
+.fieldset-label{
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+button#homme, button#femme {
+    margin: auto;
+    background-color: #F7F6F2;
+    border: 3px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 30%;
+}
+
+button#homme:hover, button#femme:hover {
+    background-color: #B5EAD7;
+}
+
+button#homme:focus, button#femme:focus {
+    background-color: #B5EAD7;
+}
+
+
+
+
+/* Labels */
+form label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+/* Input généraux */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* Bouton de soumission */
+form button {
+    background-color: #F7B186;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%;
+    
+}
+
+
+
+                                                                        /* Footer */
 
 footer {
     border-top: 2px solid #333;
     margin-top: 500px;
     padding: 60px 0px 0px 0px ;
+    text-align: center;
+    font-size: 12px;
 }
 
 footer div {
@@ -174,11 +295,6 @@ footer div .logo {
     margin-right: auto;
 }
 
-footer div .reseau {
-    margin-left: auto;
-    display: flex;
-    gap: 10px;
-}
 
 footer div nav {
     display: flex;
@@ -203,8 +319,15 @@ footer nav a:hover {
 }
 
 a.Mention {
+    margin: 30px 0px 10px 0px;
     text-align: center;
     display: block;
+}
+
+footer div .reseau {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
 }
 
 .reseau img {

@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
     <title>NutriForm-Mention</title>
 </head>
 
 <body>   
 
     <header>
-
-        <img src="/Assets/logo/Logo-complet.svg" alt="Logo du site, trois gallets.">
+            
+        <div>
+            <img src="/Assets/logo/Logo-complet.svg" alt="Logo du site nutriform."/>
             <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="IMC.html">IMC</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                
+                <a href="index.html">Accueil</a>
+
             </nav>
-            <a href="Mention.html" id="iconehome">Mention Legale</a>
-    </header>
+        </div>
 
     <main>
         <section>
@@ -44,21 +42,31 @@
 
 
     <footer>
-
-        <img src="/Assets/logo/Logo-complet.svg" alt="">
-        <nav>
-            <ul>
-                <li><a href="IMC.html">IMC</a></li>
-                <li><a href="calorie.html">Calorie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Twiter</li>
-        </ul>
-        <a href="Mention.html">MENTION LEGALE</a>
+        <div>
+            <img src="/Assets/logo/Logo.svg" alt="logo du site" class="logo">
+    
+            <!-- Première nav : Accueil et Contact -->
+            <nav class="nav-principale">
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    
+            <!-- Deuxième nav : IMC et Calorie -->
+            <nav class="nav-secondaire">
+                <a class="orange" href="IMC.html">IMC</a>
+                <a class="orange" href="calorie.html">Calorie</a>
+            </nav>
+    
+            <!-- Réseaux sociaux -->
+            <div class="reseau">
+                <a href="#"><img src="/Assets/icon/facebook.svg" alt="icone facebook" class="icone"></a>
+                <a href="#"><img src="/Assets/icon/instagram.svg" alt="icone Instagram" class="icone"></a>
+                <a href="#"><img src="/Assets/icon/linkedin.svg" alt="icone LinkedIn" class="icone"></a>
+                <a href="#"><img src="/Assets/icon/twitter-x.svg" alt="icone Twitter" class="icone"></a>
+            </div>
+        </div>
+    
+        <a href="Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés - Hamiani.Mohammed@hotmail.com</a>
     </footer>
 
 </body>
