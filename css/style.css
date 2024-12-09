@@ -1,3 +1,6 @@
+
+/*<---------------------------- LES FONTS ----------------------------->*/
+
 @font-face {
     font-family: 'Merriweather';
     src: url('/Assets/font/Merriweather-Regular.ttf') format('truetype');
@@ -8,9 +11,9 @@
     src: url('/Assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
-/* Reset global */
-html, body {
-    margin: 0 auto;
+/*<------------------------------ Reset global ---------------------------->*/
+html, body, img, video, canvas, svg {
+    margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
@@ -20,61 +23,63 @@ html, body {
     box-sizing: inherit;
 }
 
-img{
-    
-}
-
-
-
-/* Suppression des styles par défaut */
-
 img, picture, video, canvas, svg {
     max-width: 100%;
+    height: auto;
 }
 
-/* Styles globaux */
-
+/*<--------------------------------- Variables------------------------------>*/
 :root {
-    --couleur-principale : #F7F6F2;
-    --couleur-bouton-action : #F7B186;
-    --couleur-bouton-selection : #B5EAD7;
+    --couleur-principale: #F7F6F2;
+    --couleur-bouton-action: #F7B186;
+    --couleur-bouton-selection: #B5EAD7;
+    --couleur-text-noir: #333;
+
 }
 
+/*<-------------------------------- Styles globaux--------------------------->*/
 body {
     background-color: var(--couleur-principale);
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 h1, h2, h3, nav, a {
     font-family: 'Merriweather', serif;
 }
 
-/* Header */
+
+/*<---------------------------------Header----------------------------------> */
 header div {
-    padding: 20px 25px;
+    padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 header div img {
-    height: 200px;
+    height: 15em;
+    height: auto;
+    width: 25%;
 }
+
 
 header div nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    width: 15%;
+    height: auto;
 }
 
 header div nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--couleur-text-noir);
     font-weight: bold;
-    font-size: 16px;
-    border: 2px solid #333;
+    font-size: 60%;
+    border: 2px solid var(--couleur-text-noir);
     border-radius: 5px;
-    padding: 10px 80px;
+    padding: 8% 8%;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -87,229 +92,50 @@ header div nav a:hover {
 .orange {
     background-color: #F7F6F2;
     color: #000;
-    border-color: #F7B186;
+    border-color: var(--couleur-bouton-action);
 }
 
 .orange:hover {
-    background-color: #F7B186;
-}
-
-#Iconehead {
-    display: flex; 
-    align-items: center; 
-    gap: 25px; 
-    text-decoration: none; 
-    color: #333;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px 50px;
-}
-
-
-/* MAIN */
-
-main section {
-
-    margin: 150px 0px 0px 60px;
-    text-align: center;
-}
-
-
-main section ul {
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    list-style: none;
-
-}
-
-main .introutils ul li {
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    padding: 80px;
-    list-style: none;
-
-}
-
-main section ul li img {
-    color: #333;
-    font-weight: bold;
-    border: 2px solid #B5EAD7;
-    border-radius: 100%;
-    padding: 15px;
-    height: 150px;
-}
-
-main section ul li p {
-    padding: 30px 0px 30px 0px;
-}
-
-a.button {
-    text-decoration: none;
-    color: #333;
-    border: 3px solid #333;
-    border-radius: 25px;
-    background-color:#F7B186;
-    padding: 10px;
-    margin: 20px;
-}
-
-                                                 /* Main page IMC */
-
-/* Formulaire principal */
-form {
-    background-color: #F7F6F2;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    width: 70%;
-}
-
-form fieldset {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-/* Titre du formulaire */
-.form a {
-    font-family: 'Merriweather', serif;
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-    margin: 40px;
-}
-
-
-/* choix genre personne */
-
-.groupe-sexe {
-    display: flex;
-    margin: 30px;
-}
-
-.groupe-sexe :focus {
-
-}
-
-.fieldset-label{
-    border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    padding: 5px 20px;
-}
-
-button#homme, button#femme {
-    margin: auto;
-    background-color: #F7F6F2;
-    border: 3px solid #333;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    max-width: 30%;
-}
-
-button#homme:hover, button#femme:hover {
-    background-color: #B5EAD7;
-}
-
-button#homme:focus, button#femme:focus {
-    background-color: #B5EAD7;
+    background-color: var(--couleur-bouton-action);
 }
 
 
 
-
-/* Labels */
-form label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
-    display: block;
-    text-align: left;
-}
-
-/* Input généraux */
-form input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0 20px 0;
-    border: 2px solid #333;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-
-
-/* Bouton de soumission */
-form button {
-    background-color: #F7B186;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 60%;
-    
-}
-
-
-
-                                                                        /* Footer */
+/*<------------------------------------------- Footer--------------------------------------------> */
 
 footer {
-    border-top: 2px solid #333;
-    margin-top: 500px;
-    padding: 60px 0px 0px 0px ;
+    border-top: 2px solid var(--couleur-text-noir);
+    padding: 20px 10px;
     text-align: center;
-    font-size: 12px;
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-}
-
-footer div nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    padding: 10px 80px;
-    transition: all 0.3s ease;
+    font-size: 8px;
 }
 
 footer div .logo {
     height: 150px;
-    margin-right: auto;
 }
 
-
-footer div nav {
+footer div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styles pour les navigations */
+footer nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 footer nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--couleur-text-noir);
     font-weight: bold;
-    font-size: 10px;
-    border: 2px solid #333;
+    font-size: 12px;
+    border: 2px solid var(--couleur-text-noir);
     border-radius: 5px;
-    padding: 10px 25px;
-    margin: 15px;
+    padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -318,22 +144,263 @@ footer nav a:hover {
     color: #fff;
 }
 
-a.Mention {
-    margin: 30px 0px 10px 0px;
-    text-align: center;
-    display: block;
+/* Réseaux sociaux */
+.reseau {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+    justify-items: center; 
 }
 
-footer div .reseau {
-    margin-left: auto;
+.reseau a img {
+    height: 25px;
+    width: 25px;
+    transition: transform 0.3s ease;
+}
+
+.reseau a img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+/*<----------------------------------------------------- MAIN GENERALE --------------------------------------> */
+
+main {
+    margin: 8%;
+    padding: 5%;
+}
+
+main section ul {
+    padding-top: 40px;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
 }
 
-.reseau img {
-    height: 40px;
-    width: 40px;
-    margin: 5px;
+main section article img {
+    width: 400%;
+    height: 300%;
+  }
+
+  main section article {
+    text-align: start;
+    width: 80%;
+    height: 60%;
+    margin: 25% auto;
 }
 
 
+/*<--------------------- MAIN PAGE ACCUEIL--------------------------------->*/
+
+main .introutils ul li {
+    color: var(--couleur-text-noir);
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid var(--couleur-text-noir);
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+main .introutils ul li img {
+    border: 2px solid var(--couleur-bouton-selection);
+    border-radius: 50%;
+    padding: 10px;
+    height: 100px;
+}
+
+a.button {
+    text-decoration: none;
+    color: var(--couleur-text-noir);
+    border: 3px solid var(--couleur-text-noir);
+    border-radius: 25px;
+    background-color: var(--couleur-bouton-action);
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
+/*<--------------------------------------- TOUT LES FORMULAIRES --------------------------------->*/ 
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 100%;
+}
+
+select#calorie-formula {
+    background-color: var(--couleur-principale);
+    font-size: 16px;
+    border: 2px solid var(--couleur-bouton-selection);
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+}
+
+form label {
+    display: flex;
+    margin: 10px;
+}
+
+form fieldset {
+    display: flex;
+    justify-content: center;
+    border: none;
+
+}
+
+form fieldset button {
+    background-color: var(--couleur-principale);
+    border: 3px solid var(--couleur-bouton-selection);
+    padding: 2%;
+}
+
+form fieldset button:hover {
+    background-color: #B5EAD7;
+}
+
+form fieldset button:focus {
+    background-color: #B5EAD7;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--couleur-text-noir);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+form button {
+    background-color: var(--couleur-bouton-action);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    margin: 5%;
+}
+
+
+
+/*------------------------------- FORMULAIRE CONTACT -------------------------->*/
+
+form textarea {
+    font-size: 14px;
+    min-height: 150px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+}
+
+
+/*------------------------------- RESULTAT CALCULE ---------------------------->*/
+
+.resultat h2 {
+    border: 0 solid var(--couleur-bouton-selection);
+    background-color: var(--couleur-bouton-selection);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5%;
+    margin: 5%;
+
+}
+
+
+.resultat p {
+    border: 3px solid var(--couleur-bouton-selection);
+    padding: 5%;
+    margin:  5%;
+    border-radius: 15px;
+}
+
+#more {
+    display: none;
+    text-align: center;
+}
+
+#myBtn {
+    margin: 3%;
+    padding: 2%;
+    background-color: #F7B186;
+    border-radius: 8px;
+}
+
+
+
+
+  
+  
+
+  /*<--------------------------------------------------------- PAGE CONTACT-------------------------------------------------------->*/
+
+  .contact-form {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .contact-form h1 {
+    text-align: center;
+
+  }
+
+
+
+
+/*<---------------------------------------------------------- Media Queries ------------------------------------->*/
+@media (min-width: 768px) {
+
+        header div nav {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header div nav a {
+            font-size: 80%;
+        }
+
+        main section ul {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        button#homme, button#femme {
+            max-width: 20%;
+        }
+
+        footer {
+            font-size: 12px;
+        }
+
+        form {
+            width: 80%;
+        }
+        
+        footer div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        footer div nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+    
+
+}

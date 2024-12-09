@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/Assets/logo/Logo.svg"/>
-    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>NutriForm-Contact</title>
 </head>
 
@@ -16,25 +16,71 @@
             <img src="/Assets/logo/Logo-complet.svg" alt="Logo du site nutriform."/>
             <nav>
                 
-                <a href="index.html">Accueil</a>
-                <a class="orange" href="IMC.html">IMC</a>
-                <a class="orange" href="calorie.html">calorie</a>
+                <a href="/index.html">Accueil</a>
+                <a class="orange" href="/html/IMC.html">IMC</a>
+                <a class="orange" href="/html/calorie.html">calorie</a>
                 
 
             </nav>
         </div>
                 
-        <a id="Iconehead" href="contact.html">
-            <img src="/Assets/icon/calculette.svg" alt="iconehome">Contactez Nous</a>            
+      
         </header>
 
     <main>
-        <section>
-            <form action=""></form>
 
-         
+
+        <section class="form">
+        
+
+            
+
+                <h1>Nous sommes là pour vous</h1>
+                
+                <form class="form">
+
+                    <p>Veuillez remplir le formulaire ci-dessous :</p>
+                    <div>
+
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                                
+                        <label for="name">Prénom :</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre prénom" required>
+
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                    
+                        <label for="phone">Téléphone :</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+                        
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+                  
+                    </div>
+
+                    <div class="checkbox-group">
+
+                        <label>
+                        <input type="checkbox" name="confidentiality" required>
+                        J'accepte la politique de confidentialité.
+                        </label>
+                        <label>
+                        <input type="checkbox" name="newsletter">
+                        Je souhaite m'abonner à la newsletter.
+                        </label>
+
+                     </div>
+            
+                    <button type="submit">Envoyer</button>
+
+                </form>
+            
+                <p>Nutri Form traite les données recueillies pour pouvoir vous répondre.</p>
+            
             
         </section>
+
 
     </main>
 

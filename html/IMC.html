@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/Assets/logo/Logo.svg"/>
 
-    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>NutriForm-IMC</title>
 
 </head>
@@ -14,116 +14,172 @@
 
     <header>
 
-    
-            
+
         <div>
             <img src="/Assets/logo/Logo-complet.svg" alt="Logo du site nutriform."/>
             <nav>
                 
-                <a href="index.html">Accueil</a>
-                <a class="orange" href="calorie.html">calorie</a>
-                <a href="contact.html">Contact</a>
+                <a href="/index.html">Accueil</a>
+                <a class="orange" href="/html/calorie.html">Calorie</a>
+                <a href="/html/contact.html">Contact</a>
                 
-
             </nav>
         </div>
                 
-        <a id="Iconehead" href="IMC.html">
-            <img src="/Assets/icon/calculette.svg" alt="iconehome"> Indice De Masse Corporelle </a>
-
+    
     </header>
 
 
 
-        
     <main>
 
         <section class="form">
 
-             <a href="index.html">L'indice de Masse Corporelle </a><img src="/Assets/icon/bonhomme yoga.svg" alt="">
-            <form id="form">
-                
-        <!-- Champ pour le sexe -->
-         <div class="groupe-sexe">
-            <button type="button" id="homme" class="bouton-sexe" data-sexe="Homme">Homme</button>
-            <button type="button" id="femme" class="bouton-sexe" data-sexe="Femme">Femme</button>
-        </div>
-        </div>
-            
+            <img src="/Assets/icon/bonhomme yoga.svg" alt="">
+            <h1>L'indice de Masse Corporelle </h1>
+
+            <form method="POST" action="/submit">
+                <!-- Choix du sexe avec boutons -->
+                <fieldset>
+                    <button type="button" data-value="homme">Homme</button>
+                    <button type="button" data-value="femme">Femme</button>
+                    <input type="hidden" name="sexe" id="sexe" required>
+                </fieldset>
+              
+                <!-- Champ caché pour envoyer la valeur du sexe sélectionné -->
+                <input type="hidden" id="sexe" name="sexe">
+              
+                <!-- Taille -->
                 <label for="taille">Taille (cm) :</label>
                 <input type="number" id="taille" name="taille" placeholder="Ex : 183" min="50" max="300" required />
-                
+              
+                <!-- Poids -->
                 <label for="poids">Poids (kg) :</label>
                 <input type="number" id="poids" name="poids" placeholder="Ex : 95" min="1" max="500" required />
-                
+              
+                <!-- Bouton de soumission -->
                 <button type="submit">Calculer Mon IMC</button>
-                
             </form>
             
-            <ul>
-                <li>
-                    <h2>Que Signifie Votre IMC</h2>
-                    <p>
-                        L'indice de Masse Corporelle <br>
-                        IMC est utilisé pour déterminer si vous êtes en santé <br>
-                        en fonction de votre taille et de votre poids. <br>
-                        Selon l'OMS, un IMC de 28.4 indique la catégoriqe : 
-                        Surpoids : IMC 25 et 30. <br>
-                        <strong>En savoir plus</strong>
-                    </p>
-                    <p>
-                        Cela signifie que votre poids est supérieur à <br>
-                        la moyenne idéale pour votre taille. Cependant, ce <br>
-                        n'est pas encore considéré comme de l'obésité. <br>
-                        L'IMC ne prend pas en compte la composition... <br>
-                        <strong>En savoir plus</strong>
-                    </p>
-                </li>
-                <li>
-                    <h2>Conseil & interpretation</h2>
-                    <p>
-                        Réévaluez votre alimentation : Adoptez une <br>
-                        alimentation équilibrée, riche en fruits, légumes, <br>
-                        et protéines maigres, tout en limitant les aliments riches <br>
-                        en graisses et en sucres. <br>
-                        Augmenter l'activité physique : Intégrer une activité physique régulière comme la marche rapi... <br>
-                        <strong>En savoir plus</strong>
-                    </p>
-                    <p>
-                        Pourquoi c'est important <br>
-                        Le surpoids peut augmenter le risque de développer <br>
-                        des maladies chroniques comme les maladies <br>
-                         cardiaques, le diabète et l'hypertension. Il est cons... <br>
-                         <a href=""></a><strong>En savoir plus</strong>
-                    </p>
-                </li>
-            </ul>
-            
+            <div class="resultat">
+                
+                <ul>
+                    <li>
+                        <h2>Que Signifie Votre Resultat</h2>
+                        <p>
+                            <strong>
+                                    Indice de Masse Corporelle <br>
+                            </strong>
+                                est un outil utilisé
+                                pour évaluer la corpulence d'une personne en 
+                                fonction de son poids et de sa taille
+                            <span>
+                                ...
+                            </span>
+                            <span id="more">Il permet de déterminer si une personne a un poids insuffisant,
+                                normal, en surpoids ou obèse.
+                                L'IMC est calculé en divisant le poids (en kg) par le carré de la taille (en m).
+                                Il donne une estimation générale de la santé corporelle,
+                                bien qu’il ne prenne pas en compte d'autres facteurs comme la répartition de la graisse ou la masse musculaire.
+                            </span> <br>
+                            <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
+                        </p>
+                        
+                        <p>
+                            <strong>
+                                En clair <br>
+                            </strong>
+                                Cela signifie que votre poids est supérieur à la moyenne idéale pour votre taille.
+                                Cependant, ce n'est pas encore considéré comme de l'obésité.
+                            <span>
+                                ...
+                            </span>
+                            <span id ="more">
+                                L'IMC ne prend pas en compte la composition corporelle,
+                                comme la proportion de muscle ou de graisse, ce qui peut parfois fausser l'interprétation des résultats.
+
+                            </span> <br>
+                            <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
+
+
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Conseil & interpretation</h2>
+                        <p>
+                            <strong>Réévaluez votre alimentation</strong> <br>
+                                Adoptez une alimentation équilibrée, riche en fruits,
+                                légumes et protéines maigres, tout en limitant les aliments riches en graisses et en sucres.
+                            <span>
+                                ...
+                            </span>
+                            <span id="more">
+                                Augmentez l'activité physique en intégrant une activité régulière,
+                                comme la marche rapide ou la course, pour favoriser la perte de poids et améliorer votre santé globale.
+                            </span> <br>
+                            <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
+                        </p>
+                        <p>
+                            <strong>Pourquoi c'est important</strong> <br>
+                                Le surpoids peut augmenter le risque de développer des maladies chroniques,
+                                comme les maladies cardiaques, le diabète et l'hypertension.
+                            <span>
+                                ...
+                            </span>
+                            <span id="more">
+                                Il est important de gérer son poids pour prévenir ces problèmes
+                                de santé à long terme et améliorer la qualité de vie.
+                            </span> <br>
+                            <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
+                        </p>
+                    </li>
+                </ul>
+
+            </div> 
+                
         </section>
 
         <section>
 
             <article>
+
                 <h2>L'IMC, un point de départ pour mieux vous connaître</h2>
-                <p>L'IMC est un indicateur global, utile pour donner une première estimation de votre corpulence, mais il ne reflète pas toute la complexité de votre corps.
-                    Pour mieux comprendre votre état de santé, il est intéressant d'utiliser d'autres outils complémentaires. 
-                    Par exemple, une analyse de la composition corporelle peut mesurer précisément la proportion de masse musculaire, 
-                    de graisse et d'eau dans votre corps. Le tour de taille est également un indicateur clé pour évaluer les risques associés à la graisse abdominale,
-                    souvent liés aux maladies cardiovasculaires. Enfin, des tests métaboliques peuvent déterminer vos besoins caloriques spécifiques en fonction de votre activité quotidienne et de vos objectifs. 
-                    En combinant ces données, vous obtenez une vision plus complète de votre santé, ce qui permet de définir des actions vraiment adaptées
-                    </p>
+
+                <p>
+                        L'IMC est un indicateur global, utile pour donner une première estimation de votre corpulence,
+                        mais il ne reflète pas toute la complexité de votre corps.
+                        Pour mieux comprendre votre état de santé, il est intéressant d'utiliser d'autres outils complémentaires. 
+                        <span>
+                        </span>
+                    <span id="more">
+                        Par exemple, une analyse de la composition corporelle peut mesurer précisément la proportion de masse musculaire, 
+                        de graisse et d'eau dans votre corps.
+                        Le tour de taille est également un 
+                        indicateur clé pour évaluer les risques associés à la graisse abdominale,
+                        souvent liés aux maladies cardiovasculaires. Enfin, des tests métaboliques peuvent déterminer vos 
+                        besoins caloriques spécifiques en fonction de votre activité quotidienne et de vos objectifs. 
+                        En combinant ces données, vous obtenez une vision plus complète de votre santé, ce qui permet de définir des actions vraiment adaptées
+                    </span> <br>
+                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
+                </p>
                     <img src="/Assets/img/time-for-a-change-897441_1280.jpg" alt="photo d'une grenouille avec une valise qui marche avec un titre a coté time for change">
             </article>
 
             <article>
                 <h2>Pourquoi un suivi à long terme est essentiel</h2>
                 <p>
-                    Adopter de nouvelles habitudes pour améliorer votre santé est une excellente première étape, mais le véritable impact se mesure dans le temps. Un suivi à long terme
-                    permet de rester conscient des progrès réalisés, tout en ajustant vos objectifs en fonction de vos besoins et de votre mode de vie.
-                    Par exemple, surveiller régulièrement votre poids, votre IMC ou vos mensurations peut aider à identifier rapidement des changements, 
-                    positifs ou négatifs. Utiliser des outils comme des applications de suivi alimentaire, des journaux d'activité physique ou même des consultations régulières avec un professionnel
-                    de santé garantit une progression constante et adaptée. Ce suivi permet non seulement de maintenir les résultats obtenus, 
-                    mais aussi de prévenir les chutes, tout en renforçant votre motivation et votre confiance.
+                    
+                        Adopter de nouvelles habitudes pour améliorer votre santé est une excellente première étape, mais le véritable impact se mesure dans le temps. Un suivi à long terme
+                        permet de rester conscient des progrès réalisés, tout en ajustant vos objectifs en fonction de vos besoins et de votre mode de vie.
+                    <span>
+                    </span>
+                    <span id="more">
+                        Par exemple, surveiller régulièrement votre poids, votre IMC ou vos mensurations peut aider à identifier rapidement des changements, 
+                        positifs ou négatifs. Utiliser des outils comme des applications de suivi alimentaire, des journaux d'activité physique ou même des consultations régulières avec un professionnel
+                        de santé garantit une progression constante et adaptée. Ce suivi permet non seulement de maintenir les résultats obtenus, 
+                        mais aussi de prévenir les chutes, tout en renforçant votre motivation et votre confiance.
+                    </span> <br>
+                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
                 </p>
                 <img src="/Assets/img/mesure.jpg" alt="photo d'une femme qui tient un métre ruban pour montrer des unités de mesures">
             </article>
@@ -131,12 +187,17 @@
             <article>
                 <h2>La motivation passe par de petits changements</h2>
                 <p>
-                    Changer ses habitudes peut sembler intimidant, mais il n'est pas nécessaire de tout transformer d'un coup pour obtenir des résultats durables.
-                    Ce sont souvent les petits ajustements du quotidien qui font la différence. Par exemple, remplacez une collation sucrée par un fruit,
-                    prenez les escaliers au lieu de l'ascenseur ou ajoutez encore 5 à 10 minutes de marche chaque jour.
-                    Ces petites victoires sont accessibles et renforcent votre motivation. Progressivement, elles deviennent des habitudes naturelles, faciles à maintenir sur le long terme.
-                    Le secret, c'est de se fixer des objectifs simples, atteignables et de célébrer chaque progrès. Chaque pas compte,
-                    et c'est en accumulant ces petites réussites que vous construisez un changement profond et durable.
+                        Changer ses habitudes peut sembler intimidant, mais il n'est pas nécessaire de tout transformer d'un coup pour obtenir des résultats durables.
+                        Ce sont souvent les petits ajustements du quotidien qui font la différence. Par exemple, remplacez une collation sucrée par un fruit,
+                        prenez les escaliers au lieu de l'ascenseur ou ajoutez encore 5 à 10 minutes de marche chaque jour.
+                    <span>
+                    </span>
+                    <span id="more">
+                        Ces petites victoires sont accessibles et renforcent votre motivation. Progressivement, elles deviennent des habitudes naturelles, faciles à maintenir sur le long terme.
+                        Le secret, c'est de se fixer des objectifs simples, atteignables et de célébrer chaque progrès. Chaque pas compte,
+                        et c'est en accumulant ces petites réussites que vous construisez un changement profond et durable.
+                    </span> <br>
+                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
                 </p>
                 <img src="/Assets/img/Monter.jpg" alt="Image d'une personne qui monte un escalier">
             </article>
@@ -144,12 +205,17 @@
             <article>
                 <h2>Adopter une vision positive de votre parcours santé</h2>
                 <p>
-                    Lorsque vous vous engagez à améliorer votre santé, il est important de garder une vision positive et réaliste de votre parcours.
-                    Plutôt que de vous concentrer uniquement sur le "perdre du poids", pensez à ce que vous gagnez en chemin : plus d'énergie, une meilleure humeur,
-                    un sommeil réparateur, et une confiance retrouvée. Chaque effort que vous faites, qu'il soit petit ou grand, contribue à votre bien-être global.
-                    L'idée est de célébrer les petites réussites quotidiennes, de vous concentrer sur ce que vous pouvez améliorer, et de ne jamais vous décourager face aux obstacles.
-                    Chaque jour est une nouvelle opportunité pour prendre soin de vous. Avec le temps, vous verrez que ces petites actions mènent à des transformations durables.
-                    En adoptant une approche positive et en restant bienveillant envers vous-même, vous pourrez atteindre vos objectifs tout en profitant du chemin et en appréciant chaque étape de votre évolution.
+                        Lorsque vous vous engagez à améliorer votre santé, il est important de garder une vision positive et réaliste de votre parcours.
+                        Plutôt que de vous concentrer uniquement sur le "perdre du poids", pensez à ce que vous gagnez en chemin : plus d'énergie, une meilleure humeur,
+                        un sommeil réparateur, et une confiance retrouvée. Chaque effort que vous faites, qu'il soit petit ou grand, contribue à votre bien-être global.
+                    <span>
+                    </span>
+                    <span id="more">
+                            L'idée est de célébrer les petites réussites quotidiennes, de vous concentrer sur ce que vous pouvez améliorer, et de ne jamais vous décourager face aux obstacles.
+                            Chaque jour est une nouvelle opportunité pour prendre soin de vous. Avec le temps, vous verrez que ces petites actions mènent à des transformations durables.
+                            En adoptant une approche positive et en restant bienveillant envers vous-même, vous pourrez atteindre vos objectifs tout en profitant du chemin et en appréciant chaque étape de votre évolution.
+                    </span> <br>
+                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
                 </p>
                 <img src="/Assets/img/Positif.jpg" alt="Image d'une personne s'etirant les bras afin d'exprimer une attitude positive">
             </article>
