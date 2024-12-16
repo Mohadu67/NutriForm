@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/Assets/logo/Logo.svg"/>
     <link rel="stylesheet" href="/css/style.css">
-    <title>NutriForm-Calorie</title>
+    <title>Calcule tes calculories</title>
 </head>
 
 <body>   
 
     <header>
-            
+
+
         <div>
-            <img src="/Assets/logo/Logo-complet.svg" alt="Logo du site nutriform."/>
-            <nav>
-                
+            <a href="/index.html">
+                <img src="/Assets/logo/domaine-logo.svg" alt="logo du site" class="logo">
+            </a>
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="menu">
                 <a href="/index.html">Accueil</a>
                 <a class="orange" href="/html/IMC.html">IMC</a>
                 <a href="/html/contact.html">Contact</a>
@@ -32,7 +40,7 @@
          
         <section class="form">
 
-                <h1>L'indice de Masse Corporelle </h1><img src="/Assets/icon/bonhomme yoga.svg" alt="">
+                <h1>L'indice de Masse Corporelle </h1>
                 <form>
                     <!-- Choix de la formule -->
                         <fieldset>
@@ -80,90 +88,114 @@
                         <button type="submit">Calculer Mon IMC</button>
 
                 </form>
-                  
-                <Div class="resultat">
 
+                <div class="graph">
                         <ul>
                             <li>
-                                <h2>Que Signifie Votre Resultat</h2>
-                                <p>
-                                    <strong>Calcule des calories</strong> <br>
-                                        
-                                    Les calories sont une unité de mesure de l'énergie contenue dans les aliments et les boissons que nous consommons
-                                    <span>
-                                        ...
-                                    </span>
-
-                                    <span id="more">
-                                        D'après vos informations, vous avez besoin de 2150 à 2650 kcal par jour pour maintenir votre poids actuel.
-                                        Ce chiffre représente la quantité d'énergie que votre corps utilise en moyenne pour ses fonctions quotidiennes,
-                                        y compris vos activités physiques
-                                    </span><br>
-                                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                                    
-                                </p>
-
-
-
-                                <p>
-                                    <strong>En clair</strong> <br>
-                                    Pour perdre du poids, vous devrez consommer légèrement moins que ce besoin calorique,
-                                    environ 500 kcal de moins par jour.
-
-                                    <span>
-                                        ...
-                                    </span>
-
-                                    <span id="more">
-                                        À l'inverse, pour prendre du poids, 
-                                        ajoutez environ 300 à 500 kcal à ce chiffre,
-                                        selon vos objectifs et votre niveau d'activité.
-                                    </span> <br>
-                                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                                        
-                                        
-                                </p>
+                                <p>Perdre du poids</p>
                             </li>
 
+                            <li> <img src="/assets/icon/graphdown.svg" alt=""></li>
 
-                            <li>
-                                <h2>Conseil & interpretation</h2>
-                                <p>
-                                    <strong>Réévaluez votre alimentation</strong> <br>
-                                    
-                                        Votre besoin calorique est calculé en fonction de votre métabolisme de base,
-                                        qui correspond à l'énergie nécessaire pour les fonctions vitales comme
-                                    <span>
-                                        ...
-                                    </span>
-                                    <span id="more">
-                                        la respiration, ainsi que de vos activités
-                                        quotidiennes. Il varie en fonction de votre âge,
-                                        de votre sexe, de votre taille et de votre niveau d'activité physique.
-                                    </span> <br>
-                                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                                </p>
-
-
-                                <p>
-                                    <strong>Au-delà du nombre de calories</strong> <br>
-
-                                        Veillez à privilégier les aliments riches en nutriments : légumes, fruits, protéines maigres et glucides complexes.
-                                    <span>
-                                    </span>
-                                    
-                                    <span id="more">
-                                        Une alimentation équilibrée vous permettra non seulement de contrôler votre poids, mais aussi de maintenir
-                                        une bonne santé générale et de soutenir votre énergie tout au long de la journée.
-                                    </span> <br>
-                                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                                    
-                                </p>
-
-                            </li>
+                            <li><p>consommation calorie par jour</p></li>
+                            <li>"Resultat"</li>
+                            <li><p>Ce niveau de consommation de calories quotidien vous permettra de perdre entre 0,5 et 1 kg par semaine d'une manière saine et durable.</p></li>
                         </ul>
+                        <ul>
+                            <li>
+                                <p>Stabiliser</p>
+                            </li>
 
-                </Div>
+                            <li> <img src="/assets/icon/graph.svg" alt=""></li>
+
+                            <li><p>consommation calorie par jour</p></li>
+                            <li>"Resultat"</li>
+                            <li><p>Ce niveau de consommation de calories quotidien vous permettra de stabiliser votre poids actuel.</p></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Prendre du poids</p>
+                            </li>
+
+                            <li> <img src="/assets/icon/graphup.svg" alt=""></li>
+
+                            <li><p>consommation calorie par jour</p></li>
+                            <li>"Resultat"</li>
+                            <li><p>Ce niveau de consommation de calories quotidien vous permettra de prendre entre 0,5 et 1 kg par semaine.</p></li>
+                        </ul>
+                </div>
+                  
+                <div class="resultat">
+
+                    <div>
+                
+                        <h2>Que signifie cela</h2>
+                
+                        <div class="bloc">
+                            <p>
+                                <strong>Calcule des calories</strong><br>
+                                Les calories sont une unité de mesure de l'énergie contenue dans les aliments et les boissons que nous consommons.
+                            </p>
+                            <details>
+                                <summary>En savoir plus</summary>
+                                <p>
+                                    D'après vos informations, vous avez besoin de 2150 à 2650 kcal par jour pour maintenir votre poids actuel.
+                                    Ce chiffre représente la quantité d'énergie que votre corps utilise en moyenne pour ses fonctions quotidiennes,
+                                    y compris vos activités physiques.
+                                </p>
+                            </details>
+                        </div>
+                
+                        <div class="bloc">
+                            <p>
+                                <strong>En clair</strong><br>
+                                Pour perdre du poids, vous devrez consommer légèrement moins que ce besoin calorique, environ 500 kcal de moins par jour.
+                            </p>
+                            <details>
+                                <summary>En savoir plus</summary>
+                                <p>
+                                    À l'inverse, pour prendre du poids, ajoutez environ 300 à 500 kcal à ce chiffre, selon vos objectifs et votre niveau d'activité.
+                                </p>
+                            </details>
+                        </div>
+                
+                    </div>
+                
+                    <div>
+                
+                        <h2>Conseil & Interprétation</h2>
+                
+                        <div class="bloc">
+                            <p>
+                                <strong>Réévaluez votre alimentation</strong><br>
+                                Votre besoin calorique est calculé en fonction de votre métabolisme de base, qui correspond à l'énergie nécessaire pour les fonctions vitales.
+                            </p>
+                            <details>
+                                <summary>En savoir plus</summary>
+                                <p>
+                                    Cela inclut la respiration, ainsi que vos activités quotidiennes. Il varie en fonction de votre âge, de votre sexe, de votre taille et de votre niveau d'activité physique.
+                                </p>
+                            </details>
+                        </div>
+                
+                        <div class="bloc">
+                            <p>
+                                <strong>Au-delà du nombre de calories</strong><br>
+                                Veillez à privilégier les aliments riches en nutriments : légumes, fruits, protéines maigres et glucides complexes.
+                            </p>
+                            <details>
+                                <summary>En savoir plus</summary>
+                                <p>
+                                    Une alimentation équilibrée vous permettra non seulement de contrôler votre poids, mais aussi de maintenir une bonne santé générale et de soutenir votre énergie tout au long de la journée.
+                                </p>
+                            </details>
+                        </div>
+                
+                    </div>
+                
+                </div>
+                
+                
                 
         </section>
 
@@ -172,124 +204,113 @@
             <article>
                 <h2>Comment vos besoins caloriques sont-ils calculés ?</h2>
                 <p>
-                        Votre besoin calorique quotidien repose sur deux éléments principaux :
-                        le métabolisme de base (MB) et les calories brûlées par vos activités physiques.
-                    <span>
-                        ...
-                    </span>
-
-                    <span id="more">
+                    Votre besoin calorique quotidien repose sur deux éléments principaux :
+                    le métabolisme de base (MB) et les calories brûlées par vos activités physiques.
+                </p>
+                <details>
+                    <summary>En savoir plus</summary>
+                    <p>
                         Le MB correspond à l'énergie minimale dont votre corps a besoin pour fonctionner au repos
                         (respiration, circulation sanguine, digestion, etc.). Les activités, quant à elles,
                         incluent tout ce que vous faites au cours de la journée : marcher, travailler,
                         cuisiner ou même faire du sport. En combinant ces facteurs,
                         on obtient une estimation précise pour vous aider à adapter votre alimentation selon vos objectifs.
-                    </span> <br>
-                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                </p>
-                    <img src="/Assets/img/formule.jpg" alt="photo d'une grenouille avec une valise qui marche avec un titre a coté time for change">
+                    </p>
+                </details>
+                <img src="/assets/img/formule.jpg" alt="photo d'une grenouille avec une valise qui marche avec un titre à côté time for change">
             </article>
-
-
+        
             <article>
                 <h2>Pourquoi les besoins caloriques varient-ils ?</h2>
                 <p>
                     Les besoins caloriques diffèrent d'une personne à l'autre en fonction de plusieurs critères.
                     Par exemple, une personne plus grande ou plus lourde aura un métabolisme de base plus élevé qu'une personne plus petite.
-
-                    <span>
-                        ...
-                    </span>
-                    
-                    <span id="more">
+                </p>
+                <details>
+                    <summary>En savoir plus</summary>
+                    <p>
                         L'âge joue aussi un rôle : à mesure qu'on vieillit, le métabolisme ralentit légèrement. Enfin,
                         l'activité physique a un impact majeur : une personne active brûle beaucoup plus d'énergie qu'une personne sédentaire.
                         Comprendre ces variations vous aide à mieux ajuster votre alimentation et vos habitudes.
-                    </span> <br>
-                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                </p>
-                <img src="/Assets/img/diversity-5582454_1280.jpg" alt="photo d'une femme qui tient un métre ruban pour montrer des unités de mesures">
+                    </p>
+                </details>
+                <img src="/assets/img/diversity-5582454_1280.jpg" alt="photo d'une femme qui tient un mètre ruban pour montrer des unités de mesures">
             </article>
-
+        
             <article>
                 <h2>Ajuster son alimentation en fonction de ses objectifs</h2>
-
                 <p>
-                        Pour atteindre vos objectifs (perte de poids, prise de masse ou maintien), 
-                        il est important de faire de petits ajustements sur votre consommation calorique.
-                    <span>
-                        ...
-                    </span>
-                    
-                    <span id="more">
-
+                    Pour atteindre vos objectifs (perte de poids, prise de masse ou maintien),
+                    il est important de faire de petits ajustements sur votre consommation calorique.
+                </p>
+                <details>
+                    <summary>En savoir plus</summary>
+                    <p>
                         Par exemple, une réduction modérée de 500 kcal par jour entraîne une perte de poids progressive et saine,
-                        sans affecter votre énergie. À l'inverse, si vous cherchez à prendre du poids, 
+                        sans affecter votre énergie. À l'inverse, si vous cherchez à prendre du poids,
                         misez sur des aliments riches en calories mais nutritifs, comme les fruits secs, l'avocat ou les protéines.
                         Ces ajustements permettent de progresser sans frustration, tout en maintenant un équilibre dans votre alimentation.
-                    </span> <br>
-                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-                </p>
-                <img src="/Assets/img/selon-objectif.jpg" alt="Image d'une personne qui monte un escalier">
-
+                    </p>
+                </details>
+                <img src="/assets/img/selon-objectif.jpg" alt="Image d'une personne qui monte un escalier">
             </article>
-
+        
             <article>
                 <h2>La qualité des calories compte autant que leur quantité ?</h2>
                 <p>
-                        Toutes les calories ne se valent pas : 
-                        consommer 2000 kcal à base d'aliments ultra-transformés n'a pas le même effet sur votre santé que 2000 kcal provenant
-                        d'aliments complets et équilibrés.
-
-                    <span>
-                        ...
-                    </span>
-
-                    <span id="more">
-                        Une alimentation riche en légumes, fruits, protéines maigres et graisses saines 
-                        améliore votre niveau d'énergie, renforce votre système immunitaire et prévient les maladies chroniques.
-                        Privilégier la qualité des aliments, plutôt que de simplement compter les calories, 
-                        vous aide à atteindre vos objectifs tout en prenant soin de votre santé sur le long terme.
-                    </span> <br>
-                    <button onclick="myFunction()" id="myBtn">En Savoir Plus</button>
-
+                    Toutes les calories ne se valent pas :
+                    consommer 2000 kcal à base d'aliments ultra-transformés n'a pas le même effet sur votre santé que 2000 kcal provenant
+                    d'aliments complets et équilibrés.
                 </p>
-                <img src="/Assets/img/food-3226311_1280.png" alt="Image d'une personne s'etirant les bras afin d'exprimer une attitude positive">
-
+                <details>
+                    <summary>En savoir plus</summary>
+                    <p>
+                        Une alimentation riche en légumes, fruits, protéines maigres et graisses saines
+                        améliore votre niveau d'énergie, renforce votre système immunitaire et prévient les maladies chroniques.
+                        Privilégier la qualité des aliments, plutôt que de simplement compter les calories,
+                        vous aide à atteindre vos objectifs tout en prenant soin de votre santé sur le long terme.
+                    </p>
+                </details>
+                <img src="/assets/img/food-3226311_1280.png" alt="Image d'une personne s'étirant les bras afin d'exprimer une attitude positive">
             </article>
-
+        
         </section>
-
+        
     </main>
 
 
 
     <footer>
         <div>
-            <img src="/Assets/logo/Logo.svg" alt="logo du site" class="logo">
+            <a href="/index.html">
+                <img src="/assets/logo/domaine-logo.svg" alt="logo du site" class="logo">
+            </a>
     
-            <!-- Première nav : Accueil et Contact -->
-            <nav class="nav-principale">
-                <a href="index.html">Accueil</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <!-- Conteneur pour les deux menus -->
+            <div class="menu-nav">
+                <!-- Première nav : Accueil et Contact -->
+                <nav class="nav-principale">
+                    <a href="/index.html">Accueil</a>
+                    <a href="/html/contact.html">Contact</a>
+                </nav>
     
-            <!-- Deuxième nav : IMC et Calorie -->
-            <nav class="nav-secondaire">
-                <a class="orange" href="IMC.html">IMC</a>
-                <a class="orange" href="calorie.html">Calorie</a>
-            </nav>
+                <!-- Deuxième nav : IMC et Calorie -->
+                <nav class="nav-secondaire">
+                    <a class="orange" href="/html/IMC.html">IMC</a>
+                    <a class="orange" href="/html/calorie.html">Calorie</a>
+                </nav>
+            </div>
     
             <!-- Réseaux sociaux -->
             <div class="reseau">
-                <a href="#"><img src="/Assets/icon/facebook.svg" alt="icone facebook" class="icone"></a>
-                <a href="#"><img src="/Assets/icon/instagram.svg" alt="icone Instagram" class="icone"></a>
-                <a href="#"><img src="/Assets/icon/linkedin.svg" alt="icone LinkedIn" class="icone"></a>
-                <a href="#"><img src="/Assets/icon/twitter-x.svg" alt="icone Twitter" class="icone"></a>
+                <a href="#"><img src="/assets/icon/facebook.svg" alt="icone facebook" class="icone"></a>
+                <a href="#"><img src="/assets/icon/instagram.svg" alt="icone Instagram" class="icone"></a>
+                <a href="#"><img src="/assets/icon/linkedin.svg" alt="icone LinkedIn" class="icone"></a>
+                <a href="#"><img src="/assets/icon/twitter-x.svg" alt="icone Twitter" class="icone"></a>
             </div>
         </div>
     
-        <a href="Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés - Hamiani.Mohammed@hotmail.com</a>
+        <a href="/html/Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés - Hamiani.Mohammed@hotmail.com</a>
     </footer>
 
 </body>
