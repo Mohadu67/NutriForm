@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/Assets/logo/Logo.svg"/>
+    <link rel="icon" type="image/png" href="/assets/logo/Logo.svg"/>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Contactez Nous</title>
+    <title>NutriForm-Contact</title>
 </head>
 
 <body>   
@@ -13,8 +13,16 @@
     <header>
             
         <div>
-            <img src="/Assets/logo/domaine-logo.svg" alt="Logo du site nutriform."/>
-            <nav>
+            <a href="/index.html">
+                <img src="/Assets/logo/domaine-logo.svg" alt="logo du site" class="logo">
+            </a>
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="menu">
                 
                 <a href="/index.html">Accueil</a>
                 <a class="orange" href="/html/IMC.html">IMC</a>
@@ -88,30 +96,34 @@
 
     <footer>
         <div>
-            <img src="/Assets/logo/Logo.svg" alt="logo du site" class="logo">
+            <a href="/index.html">
+                <img src="/assets/logo/domaine-logo.svg" alt="logo du site" class="logo">
+            </a>
+            <!-- Conteneur pour les deux menus -->
+            <div class="menu-nav">
+                <!-- Première nav : Accueil et Contact -->
+                <nav class="nav-principale">
+                    <a href="/index.html">Accueil</a>
+                    <a href="/html/contact.html">Contact</a>
+                </nav>
     
-            <!-- Première nav : Accueil et Contact -->
-            <nav class="nav-principale">
-                <a href="/html/index.html">Accueil</a>
-                <a href="/htmlcontact.html">Contact</a>
-            </nav>
-    
-            <!-- Deuxième nav : IMC et Calorie -->
-            <nav class="nav-secondaire">
-                <a class="orange" href="/htmlIMC.html">IMC</a>
-                <a class="orange" href="/htmlcalorie.html">Calorie</a>
-            </nav>
+                <!-- Deuxième nav : IMC et Calorie -->
+                <nav class="nav-secondaire">
+                    <a class="orange" href="/html/IMC.html">IMC</a>
+                    <a class="orange" href="/html/calorie.html">Calorie</a>
+                </nav>
+            </div>
     
             <!-- Réseaux sociaux -->
             <div class="reseau">
-                <a href="#"><img src="/Assets/icon/facebook.svg" alt="icone facebook" class="icone"></a>
-                <a href="#"><img src="/Assets/icon/instagram.svg" alt="icone Instagram" class="icone"></a>
-                <a href="#"><img src="/Assets/icon/linkedin.svg" alt="icone LinkedIn" class="icone"></a>
-                <a href="#"><img src="/Assets/icon/twitter-x.svg" alt="icone Twitter" class="icone"></a>
+                <a href="#"><img src="/assets/icon/facebook.svg" alt="icone facebook" class="icone"></a>
+                <a href="#"><img src="/assets/icon/instagram.svg" alt="icone Instagram" class="icone"></a>
+                <a href="#"><img src="/assets/icon/linkedin.svg" alt="icone LinkedIn" class="icone"></a>
+                <a href="#"><img src="/assets/icon/twitter-x.svg" alt="icone Twitter" class="icone"></a>
             </div>
         </div>
     
-        <a href="Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés - Hamiani.Mohammed@hotmail.com</a>
+        <a href="/html/Mention.html">MENTION LEGALE | © 2024 Mohammed HAMIANI Copyright - Tous droits réservés - Hamiani.Mohammed@hotmail.com</a>
     </footer>
 
 </body>

@@ -407,7 +407,7 @@ input[type="checkbox"] {
 
 .bloc {
     border: 2px solid var(--couleur-bouton-selection);
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 8px;
     min-height: 150px;
     padding: 3px;
@@ -598,8 +598,9 @@ input[type="checkbox"] {
         }
 
         .resultat {
-            max-width: 500px;
+            max-width: 700px;
             margin: 10px auto;
+            gap: 100px;
         }
 
         .bloc {
