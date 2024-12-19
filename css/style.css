@@ -377,6 +377,7 @@ form label {
     margin: 6px;
     font-size: 8px;
     white-space: nowrap;
+    align-items: center;
 }
 
 .form p {
